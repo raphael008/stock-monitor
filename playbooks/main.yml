@@ -1,5 +1,5 @@
 - hosts: webservers
   tasks:
     - name: test connection
-      debug: true
-      ping:
+      debug:
+        ping:
