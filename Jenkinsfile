@@ -19,7 +19,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy...'
-                sh "ansible-playbook 'playbooks/main.yml' -i 'inventory/hosts.yml'"
+                ansiColor('xterm') {
+                    ansiblePlaybook(
+                        playbook: 'playbooks/main.yml',
+                        inventory: 'inventory/hosts.yml',
+                        disableHostKeyChecking: true,
+                        colorized: true)
+                }
             }
         }
     }
