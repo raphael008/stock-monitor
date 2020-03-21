@@ -5,7 +5,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>stock-monitor-service</module>
-        <module>stock-monitor-controller</module>
         <module>stock-monitor-model</module>
         <module>stock-monitor-dao</module>
         <module>stock-monitor-deploy</module>
