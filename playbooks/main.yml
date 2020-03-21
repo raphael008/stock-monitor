@@ -1,5 +1,6 @@
 - hosts: webservers
-  remote_user: root
+  vars:
+    ansible_host_key_checking: false
   tasks:
     - name: test connection
       remote_user: root
