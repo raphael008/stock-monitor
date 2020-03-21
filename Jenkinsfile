@@ -23,7 +23,6 @@ pipeline {
                     ansiblePlaybook(
                         playbook: 'playbooks/main.yml',
                         inventory: 'inventory/hosts.yml',
-                        disableHostKeyChecking: true,
                         colorized: true)
                 }
             }
