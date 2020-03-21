@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webserver
   tasks:
     - name: test connection
       ping:
