@@ -1,5 +1,5 @@
 - hosts: webservers
-  remote_user: root
   tasks:
     - name: test connection
+      become: yes
       ping:
