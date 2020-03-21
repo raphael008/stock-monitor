@@ -21,7 +21,7 @@ pipeline {
                 echo 'Deploy...'
                 ansiColor('xterm') {
                     ansiblePlaybook(
-                        playbook: 'playbooks/main.yml',
+                        playbook: 'playbook/main.yml',
                         inventory: 'inventory/hosts',
                         colorized: true)
                 }
