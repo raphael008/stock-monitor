@@ -19,6 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy...'
+                sh 'ansible -i inventory/hosts.yml --playbook-dir playbooks/main.yml'
             }
         }
     }
