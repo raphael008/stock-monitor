@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: webserver
   connection: local
   remote_user: root
 
