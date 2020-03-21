@@ -22,7 +22,7 @@ pipeline {
                 ansiColor('xterm') {
                     ansiblePlaybook(
                         playbook: 'playbooks/main.yml',
-                        inventory: 'inventory/hosts.yml',
+                        inventory: 'inventory/hosts',
                         colorized: true)
                 }
             }
