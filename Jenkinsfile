@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy...'
-                sh 'ansible-playbook installation: Default, inventory: inventory/hosts.yml, playbook: playbooks/main.yml '
+                sh 'ansible-playbook inventory: inventory/hosts.yml, playbook: playbooks/main.yml '
             }
         }
     }
