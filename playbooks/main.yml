@@ -2,6 +2,4 @@
 - hosts: webserver
   tasks:
     - name: test connection
-      become: yes
-      become_user: root
       ping:
