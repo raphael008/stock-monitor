@@ -6,7 +6,13 @@
     - name: test connection
       ping:
 
+    - name: Create a directory if it does not exist
+      file:
+        path: /apps/stock-monitor
+        state: directory
+        mode: '0755'
+
     - name: copy jar file to web server
       copy:
         src: ../stock-monitor-deploy/target/stock-monitor.jar
-        dest: /root/stock-monitor/stock-monitor.jar
+        dest: /apps/stock-monitor/stock-monitor.jar
