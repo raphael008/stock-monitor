@@ -6,13 +6,6 @@
     - name: test connection
       ping:
 
-    - name: create a directory if it does not exist
-      file:
-        path: /apps/stock-monitor
-        state: directory
-        mode: '0755'
-      become: yes
-
     - name: copy jar file to web server
       copy:
         src: /stock-monitor-dao/target/stock-monitor.jar
