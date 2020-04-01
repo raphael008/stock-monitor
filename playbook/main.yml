@@ -9,4 +9,4 @@
     - name: copy jar file to web server
       copy:
         src: ../stock-monitor-deploy/target/stock-monitor.jar
-        dest: ~/stock-monitor/stock-monitor.jar
+        dest: /root/stock-monitor/stock-monitor.jar
