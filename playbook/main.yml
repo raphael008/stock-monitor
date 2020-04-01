@@ -5,3 +5,14 @@
   tasks:
     - name: test connection
       ping:
+
+    - name: create a directory if it does not exist
+      file:
+        path: /apps/stock-monitor
+        state: directory
+        mode: '0755'
+
+    - name: copy jar file to web server
+      copy:
+        src: /stock-monitor-dao/target/stock-monitor.jar
+        dest: /apps/stock-monitor/stock-monitor.jar
