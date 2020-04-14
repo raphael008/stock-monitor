@@ -11,5 +11,10 @@
 
     <artifactId>stock-monitor-service</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.github.raphael008</groupId>
+            <artifactId>stock-monitor-dao</artifactId>
+        </dependency>
+    </dependencies>
 </project>
