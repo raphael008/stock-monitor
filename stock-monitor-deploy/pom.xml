@@ -54,7 +54,7 @@
     <build>
         <finalName>stock-monitor</finalName>
         <filters>
-            <filter>application-${env}.yml</filter>
+            <filter>${basedir}/src/main/resources/profiles/application-${env}.yml</filter>
         </filters>
         <plugins>
             <plugin>
