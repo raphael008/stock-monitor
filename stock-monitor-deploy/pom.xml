@@ -11,6 +11,10 @@
 
     <artifactId>stock-monitor-deploy</artifactId>
 
+    <properties>
+        <plugins.version>2.2.5.RELEASE</plugins.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.github.raphael008</groupId>
@@ -33,18 +37,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${plugins.version}</version>
+                <configuration>
+                    <mainClass>com.github.raphael008.StockMonitorApplication</mainClass>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>com.github.raphael008.StockMonitorApplication</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
+                <version>3.1.2</version>
             </plugin>
         </plugins>
     </build>
