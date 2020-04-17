@@ -34,16 +34,20 @@
     <profiles>
         <profile>
             <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <properties>
+                <env>dev</env>
+            </properties>
             <build>
                 <resources>
                     <resource>
+                        <filtering>true</filtering>
                         <directory>src/main/resources/profiles</directory>
                     </resource>
                 </resources>
             </build>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
     </profiles>
 
