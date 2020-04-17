@@ -53,6 +53,9 @@
 
     <build>
         <finalName>stock-monitor</finalName>
+        <filters>
+            <filter>application-${env}.yml</filter>
+        </filters>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
